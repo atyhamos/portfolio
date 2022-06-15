@@ -3,11 +3,12 @@ import React from 'react'
 
 const PersonCard = () => {
   const cardStyles = {
-    width: '30rem',
     position: 'fixed',
+    minWidth: '200px',
+    width: '30vw',
   }
   return (
-    <div className='card fixed' style={cardStyles}>
+    <div className='card' style={cardStyles}>
       <img
         src='./images/picture.jpg'
         className='card-img-top'

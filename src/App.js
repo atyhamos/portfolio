@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <body>
         <Container className='container-fluid my-5 overflow-auto'>
-          <div className='row align-items-start'>
+          <div className='row'>
             <Col>
               <PersonCard />
             </Col>
@@ -23,11 +23,12 @@ function App() {
               {projects.map((project) => (
                 <ProjectCard
                   title={project.title}
-                  img={project.img}
+                  img={project.image}
                   website={project.website}
                   description={project.description}
                   stack={project.stack}
                   repo={project.repo}
+                  key={project.title}
                 />
               ))}
               <ProjectCard />
