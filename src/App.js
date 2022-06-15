@@ -23,7 +23,7 @@ function App() {
               {projects.map((project) => (
                 <ProjectCard
                   title={project.title}
-                  img={project.image}
+                  img={project.img}
                   website={project.website}
                   description={project.description}
                   stack={project.stack}
