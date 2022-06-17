@@ -1,24 +1,104 @@
-body {
-  margin: 0;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
+*,
+::before,
+::after {
+  box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+}
+
+.navbar-parent {
+  background-color: black;
+  padding: 0 1.5rem 0 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* Make it fixed */
+  justify-content: left;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar-icons {
+  margin-left: auto;
+  display: flex;
+}
+
+.navbar-icons > li {
+  margin: 1rem;
+}
+
+.navbar-item {
+  list-style-type: none;
 }
 
 header {
   text-align: center;
 }
 
-.profile {
-  max-width: 35%;
-  border-radius: 10px;
+/* Profile card styling */
+
+.profile-card {
+  padding: 1rem;
+  margin: 1rem 2rem;
+  width: 30vw;
+  border: 2px grey solid;
+  position: fixed;
+  border-radius: 5px;
+}
+
+.profile-card-image {
+  width: 100%;
+}
+
+.profile-card-body > h2 {
+  text-overflow: clip;
+}
+
+/* Project card styling */
+
+.project-card {
+  width: 55vw;
+  border: 2px gray solid;
+  margin: 1rem 3rem;
+  border-radius: 5px;
+}
+
+.project-image-container {
+  width: 100%;
+}
+
+/* Specific styling */
+.white {
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.silent-link {
+  text-decoration: none;
+}
+
+@media (max-width: 750px) {
+  body {
+    max-width: 750px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .profile-card {
+    margin: auto;
+    padding: auto;
+    width: 70%;
+    position: relative;
+  }
+  .project-card {
+    width: auto;
+  }
 }
