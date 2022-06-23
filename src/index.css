@@ -81,8 +81,13 @@ header {
   font-weight: bold;
 }
 
-.silent-link {
+a:link {
   text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: firebrick;
 }
 
 @media (max-width: 750px) {

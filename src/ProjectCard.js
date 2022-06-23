@@ -11,7 +11,7 @@ const ProjectCard = ({ title, img, website, description, stack, repo }) => {
         </div>
         <div className='col project-desc'>
           <div className='card-body bg-grey'>
-            <a href={website} className='silent-link'>
+            <a href={website}>
               {' '}
               <h4 className='card-title bold'>{title}</h4>
             </a>

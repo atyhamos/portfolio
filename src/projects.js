@@ -42,6 +42,14 @@ const projects = [
     stack: 'Pure HTML, JavaScript, CSS',
     repo: 'https://github.com/atyhamos/randompass',
   },
+  {
+    title: 'Blog Post',
+    img: './images/blog.png',
+    website: 'https://atyhamos.github.io/van-gogh-blog/',
+    description: 'A simple blog with a single post.',
+    stack: 'Pure HTML and CSS',
+    repo: 'https://github.com/atyhamos/van-gogh-blog',
+  },
 ]
 
 export default projects

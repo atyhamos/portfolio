@@ -1,8 +1,8 @@
-import './App.css'
 import projects from './projects.js'
 import ProjectCard from './ProjectCard'
 import PersonCard from './PersonCard'
 import Navbar from './Navbar'
+import './index.css'
 
 function App() {
   return (
@@ -30,13 +30,11 @@ function App() {
           </div>
         </div>
       </div>
-      <footer>
-        <p className='text-center my-0'>
-          This page is also created by me using React{' '}
-          <a href='https://github.com/atyhamos/portfolio'>
-            Link to GitHub repository
-          </a>
-        </p>
+      <footer className='text-center'>
+        <p className='my-0'>This page is also created by me using React </p>
+        <a href='https://github.com/atyhamos/portfolio'>
+          Link to GitHub repository
+        </a>
       </footer>
     </>
   )
