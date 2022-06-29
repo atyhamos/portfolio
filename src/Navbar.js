@@ -1,10 +1,16 @@
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({ setSearchInput }) => {
   return (
     <nav className='navbar'>
-      <ul className='navbar-parent'>
-        <li className='navbar-item white bold'>Amos' Portfolio</li>
+      <span className='navbar-parent'>
+        <li className='navbar-item white bold mx-3'>Amos' Portfolio</li>
+        <input
+          className='navbar-search'
+          placeholder='Search for tech stacks e.g React'
+          id='search-input'
+          onKeyUp={(e) => setSearchInput(e.target.value)}
+        />
         <div className='navbar-icons'>
           <li className='navbar-item'>
             <a className='navbar-link' href='mailto:atyhalive@gmail.com'>
@@ -25,7 +31,13 @@ const Navbar = () => {
             </a>
           </li>
         </div>
-      </ul>
+      </span>
+      {/* <input
+        className='navbar-search'
+        placeholder='JavaScript, CSS..'
+        id='search-input'
+        onKeyUp={(e) => setSearchInput(e.target.value)}
+      /> */}
     </nav>
   )
 }

@@ -23,6 +23,14 @@
   z-index: 1;
 }
 
+.navbar-search {
+  margin-left: 10px;
+  font-size: 16px;
+  padding: 10px 25px 10px 5px;
+  width: 30%;
+  min-width: 85px;
+}
+
 .navbar-icons {
   margin-left: auto;
   display: flex;
